@@ -31,7 +31,7 @@ import css from './ItemList.css'
 //     }
 // }
 const ItemList = (props) => {
-    const items = props.products.map((product) => <div className='products'>{product.product} <button>Remove</button> </div>);
+    const items = props.products.map((product) => <div className='products'>{product.product}<button>Remove</button></div>);
     return (
         <div className='page'>
             <div className="container">

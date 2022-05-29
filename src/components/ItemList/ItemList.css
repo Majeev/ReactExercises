@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   font-family: Lato, sans-serif;
   margin: 0;
@@ -11,7 +11,7 @@
   height: 100vh;
   justify-content: center;
 }
-.container{
+.container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -19,35 +19,36 @@
   width: 40%;
   /* border: 1px solid black; */
 }
-header{
+header {
   padding: 1rem 0;
 }
-form button, form input{
+form button,
+form input {
   background: transparent;
   border: none;
   font-size: 1rem;
   padding: 1rem;
 }
-form button{
-  background-color: #4267B2;
+form button {
+  background-color: #4267b2;
   color: white;
   cursor: pointer;
 }
 
-form{
+form {
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   min-width: 350px;
 }
-input:focus{
+input:focus {
   outline: none;
 }
-.item-wrapper{
+.item-wrapper {
   margin: 1rem;
   width: 100%;
 }
-.products{
+.products {
   border: 1px solid black;
   display: flex;
   font-size: 1.5rem;
