@@ -1,6 +1,7 @@
 import './App.css';
 import ItemList from './components/ItemList/ItemList'
 
+
 const data = [
   {
     product: "Milk"
@@ -22,7 +23,8 @@ const data = [
 function App() {
   return (
     <div id="app">
-      <ItemList />
+      <ItemList name={data} />
+     
     </div>
   );
 }
