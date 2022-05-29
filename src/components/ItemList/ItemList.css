@@ -45,7 +45,7 @@ form{
 input:focus{
   outline: none;
 }
-.item-list{
+/* .item-list{
   width: 400px;
   list-style: none;
   margin: 2rem;
@@ -75,4 +75,24 @@ input:focus{
 }
 .item-wrapper button:hover{
   transform: scale(1.1);
+} */
+.item-wrapper{
+  width: 100%;
+  margin: 1rem;
+}
+.products{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 80%;
+  border: 1px solid black;
+  margin: 1.2rem auto;
+}
+.products button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: tomato;
+  font-weight: bold;
 }

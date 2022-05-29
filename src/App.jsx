@@ -23,8 +23,7 @@ const data = [
 function App() {
   return (
     <div id="app">
-      <ItemList name={data} />
-     
+      <ItemList products={data} />
     </div>
   );
 }

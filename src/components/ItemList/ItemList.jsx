@@ -31,8 +31,7 @@ import css from './ItemList.css'
 //     }
 // }
 const ItemList = (props) => {
-    const item = props.name;
-    test = data.map((product) => <li>{product}</li>);
+    const test = props.products.map((product) => <div className='products'>{product.product} <button>Remove</button> </div>);
     return (
         <div className='page'>
             <div className="container">
@@ -45,48 +44,10 @@ const ItemList = (props) => {
                     <button type='submit'>Add</button>
                 </form>
 
-                <ul className='item-list'>
                     <div className="item-wrapper">
-                        {item}
-                            <button>Remove</button>
+                            {test}
                     </div>
-                    {/* <div className="item-wrapper">
-                        <li>{props.item}</li>
-                        <button>Remove</button>
-                    </div>
-                        <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div>
-                    <div className="item-wrapper">
-                        <li>Lorem Ipsum</li>
-                        <button>Remove</button>
-                    </div> */}
-                </ul>
+                
             </div>
         </div>
     )
