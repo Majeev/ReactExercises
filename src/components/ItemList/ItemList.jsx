@@ -31,23 +31,20 @@ import css from './ItemList.css'
 //     }
 // }
 const ItemList = (props) => {
-    const test = props.products.map((product) => <div className='products'>{product.product} <button>Remove</button> </div>);
+    const items = props.products.map((product) => <div className='products'>{product.product} <button>Remove</button> </div>);
     return (
         <div className='page'>
             <div className="container">
                 <header>
                     <h1>To do list</h1>
                 </header>
-
                 <form>
                     <input type='text' placeholder='add your todo' />
                     <button type='submit'>Add</button>
                 </form>
-
-                    <div className="item-wrapper">
-                            {test}
-                    </div>
-                
+                <div className="item-wrapper">
+                    {items}
+                </div>
             </div>
         </div>
     )

@@ -1,20 +1,20 @@
 *{
-  font-family: Lato, sans-serif;
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 .container{
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   height: 70%;
   width: 40%;
   /* border: 1px solid black; */
@@ -25,74 +25,41 @@ header{
 form button, form input{
   background: transparent;
   border: none;
-  padding: 1rem;
   font-size: 1rem;
+  padding: 1rem;
 }
 form button{
-  
-  cursor: pointer;
   background-color: #4267B2;
   color: white;
- 
+  cursor: pointer;
 }
 
 form{
+  border: 1px solid black;
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
   min-width: 350px;
 }
 input:focus{
   outline: none;
 }
-/* .item-list{
-  width: 400px;
-  list-style: none;
-  margin: 2rem;
-}
-.item-wrapper {
-  border: 1px solid black;
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: .7rem 0;
-  font-size: 1.5rem;
-  
-}
-
-.item-wrapper button, .item-wrapper li {
-  border: none;
-  padding: 0 10px;
-  
-}
-.item-wrapper button {
-  color: red;
-  cursor: pointer;
-  background: none;
-  transition: all .3s ease-in-out;
-}
-.item-wrapper button:hover{
-  transform: scale(1.1);
-} */
 .item-wrapper{
-  width: 100%;
   margin: 1rem;
+  width: 100%;
 }
 .products{
+  border: 1px solid black;
   display: flex;
-  justify-content: space-between;
   font-size: 1.5rem;
+  justify-content: space-between;
+  margin: 1.2rem auto;
   padding: 1rem;
   width: 80%;
-  border: 1px solid black;
-  margin: 1.2rem auto;
 }
 .products button {
   background: transparent;
   border: none;
-  cursor: pointer;
   color: tomato;
+  cursor: pointer;
   font-weight: bold;
 }
