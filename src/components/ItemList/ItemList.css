@@ -15,7 +15,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 100%;
+  justify-content: center;
   width: 40%;
   /* border: 1px solid black; */
 }
@@ -47,14 +48,18 @@ input:focus {
 .item-wrapper {
   margin: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .products {
   border: 1px solid black;
   display: flex;
   font-size: 1.5rem;
   justify-content: space-between;
-  margin: 1.2rem auto;
-  padding: 1rem;
+  margin: 0.7rem 0;
+  min-width: 350px;
+  padding: 0.7rem;
   width: 80%;
 }
 .products button {

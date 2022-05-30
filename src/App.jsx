@@ -1,24 +1,23 @@
-import './App.css';
-import ItemList from './components/ItemList/ItemList'
-
+import "./App.css";
+import ItemList from "./components/ItemList/ItemList";
 
 const data = [
   {
-    product: "Milk"
+    name: "Milk",
   },
   {
-    product: "Butter"
+    name: "Butter",
   },
   {
-    product: "Bread"
+    name: "Bread",
   },
   {
-    product: "Cheese"
+    name: "Cheese",
   },
   {
-    product: "Eggs"
-  }
-]
+    name: "Eggs",
+  },
+];
 
 function App() {
   return (
