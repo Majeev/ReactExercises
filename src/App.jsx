@@ -25,7 +25,7 @@ const preset = [
 ];
 
 function App() {
-  const [ data, setData ] = useState()
+  const [ data, setData ] = useState([])
   useEffect(() => {
      setInterval(() => {
        setData(
