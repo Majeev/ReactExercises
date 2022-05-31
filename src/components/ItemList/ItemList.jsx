@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import css from "./ItemList.css";
 
 const ItemList = (props) => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(props.products);
   const [productName, setProductName] = useState("");
 
   const handleAddProduct = (e) => {
     e.preventDefault();
-    setProducts([...products, { name: productName }]);
-    setProductName("");
+    if (productName.length >= 1) {
+      setProducts([...products, { name: productName }]);
+      setProductName("");
+    }
     console.log(products);
   };
 
