@@ -15,14 +15,13 @@ const ItemList = (props) => {
   };
 
   const handleInputChange = (event) => {
-    const element = event.target;
-    setProductName(element.value);
+    const input = event.target;
+    setProductName(input.value);
   };
 
   const handleProductRemove = (product) => {
-    return (event) => {
-      console.log(event, product);
-      setProducts(products.filter((items) => items.name !== product.name));
+    return () => {
+      setProducts(products.filter((item) => item.name !== product.name));
     };
   };
 
