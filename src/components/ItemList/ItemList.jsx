@@ -42,7 +42,7 @@ const ItemList = (props) => {
           </button>
         </form>
         <div className="item-wrapper">
-          {products.map((product) => (
+          {props.data.map((product) => (
             <div className="products" key={product.name}>
               {product.name}
               <button onClick={handleProductRemove(product)}>Remove</button>
