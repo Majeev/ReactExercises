@@ -20,7 +20,7 @@ const ItemList = (props) => {
   const handleProductRemove = (product) => {
     return (event) => {
       console.log(event, product);
-      setProducts([products.filter((items) => items.name !== product.name)]);
+      setProducts(products.filter((items) => items.name !== product.name));
     };
   };
 
