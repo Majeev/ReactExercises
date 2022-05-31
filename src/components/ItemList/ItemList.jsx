@@ -11,7 +11,6 @@ const ItemList = (props) => {
       setProducts([...products, { name: productName }]);
       setProductName("");
     }
-    console.log(products);
   };
 
   const handleInputChange = (event) => {
