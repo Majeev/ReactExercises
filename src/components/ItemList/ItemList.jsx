@@ -42,12 +42,19 @@ const ItemList = (props) => {
           </button>
         </form>
         <div className="item-wrapper">
+          {products.map((product) => (
+            <div className="products" key={product.name}>
+              {product.name}
+              <button onClick={handleProductRemove(product)}>Remove</button>
+            </div>
+          ))}
           {props.products.map((product) => (
             <div className="products" key={product.name}>
               {product.name}
               <button onClick={handleProductRemove(product)}>Remove</button>
             </div>
           ))}
+          
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import ItemList from "./components/ItemList/ItemList";
 
@@ -25,18 +25,18 @@ const preset = [
 ];
 
 function App() {
-  const [ data, setData ] = useState([])
+  const [data, setData] = useState([]);
   useEffect(() => {
-     setInterval(() => {
-       setData(
-         preset.slice(
-           randomInteger(0, preset.length), 
-           randomInteger(0, preset.length)
-         )
-       )
-     }, 7500)
-  }, [])
-  
+    setInterval(() => {
+      setData(
+        preset.slice(
+          randomInteger(0, preset.length),
+          randomInteger(0, preset.length)
+        )
+      );
+    }, 3500);
+  }, []);
+
   return (
     <div id="app">
       <ItemList products={data} />
